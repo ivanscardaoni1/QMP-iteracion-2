@@ -1,13 +1,13 @@
 package QMP;
 //Builder
-public class PrendaBuilder {
+public class Borrador{
   TipoPrenda tipo;
   Color colorPrincipal;
   Color colorSecundario;
   Material material;
   Trama trama = Trama.LISA;
 
-  PrendaBuilder(TipoPrenda tipo) {
+  Borrador(TipoPrenda tipo) {
     this.tipo = tipo;
   }
 
@@ -27,7 +27,7 @@ public class PrendaBuilder {
     this.trama = trama;
   }
 
-  Prenda buildPrenda(){
+  Prenda crearPrenda(){
     validarTipo(tipo);
     validarColor(colorPrincipal);
     validarMaterial(material);
